@@ -27,5 +27,5 @@ async def delete_user(user_name:str):
     return {"Message": f"User {user_name} deleted"}
 
 @app.put("/users/user_id")
-async def update_user(user_id: int, user:User):
+async def update_user(user_id: int, user:user):
     return {"message": f"user {user_id} updated successfully"}
